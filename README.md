@@ -1,5 +1,6 @@
 <div dir="rtl">
-# [آموزش فارسی Stream MySQL Data to ElasticSearch with Kafka](http://alihossein.ir/courses/آموزش-فارسی-stream-mysql-data-to-elasticsearch-with-kafka)
+
+# [آموزش فارسی Stream MySQL Data to ElasticSearch with Kafka](https://goo.gl/vy7NVx)
 
 این Repository مربوط به آموزش منتشر شده در وب سایت alihossein.ir می باشد.
 
