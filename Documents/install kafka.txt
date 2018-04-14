@@ -1,0 +1,25 @@
+Install JDK 1.8
+$ sudo yum  -y install java-1.8.0-openjdk
+
+Install the Confluent public key, which is used to sign packages in the YUM repository.
+$ sudo rpm --import https://packages.confluent.io/rpm/4.0/archive.key
+
+
+Add the repository to your /etc/yum.repos.d/ directory in a file named confluent.repo
+
+[Confluent.dist]
+name=Confluent repository (dist)
+baseurl=https://packages.confluent.io/rpm/4.0/7
+gpgcheck=1
+gpgkey=https://packages.confluent.io/rpm/4.0/archive.key
+enabled=1
+
+[Confluent]
+name=Confluent repository
+baseurl=https://packages.confluent.io/rpm/4.0
+gpgcheck=1
+gpgkey=https://packages.confluent.io/rpm/4.0/archive.key
+enabled=1
+
+Install Confluent Platform.
+$ sudo yum install confluent-platform-oss-2.11
